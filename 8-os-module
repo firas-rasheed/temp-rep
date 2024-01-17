@@ -1,0 +1,16 @@
+const os1 = require("os");
+
+//info about user
+const user = os1.userInfo();
+console.log(user);
+
+// returns system uptime
+console.log(`the system uptime is ${os1.uptime()} seconds`);
+
+const currentOS = {
+  name: os1.type(),
+  release: os1.release(),
+  totalMem: os1.totalmem(),
+  freeMem: os1.freemem(),
+};
+console.log(currentOS);
